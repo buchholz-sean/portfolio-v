@@ -1,0 +1,19 @@
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ffd259;
+    background: -moz-linear-gradient(left, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
+    background: -webkit-linear-gradient(left, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
+    background: linear-gradient(to right, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd259', endColorstr='#27297c', GradientType=1);
+}
+
+.site-content {
+    flex: 1;
+}
+
+#output {
+    background: rgba(0, 0, 0, .25);
+    color: white;
+}
