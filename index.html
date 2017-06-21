@@ -6,35 +6,40 @@
     <title>Sunrise | Sunset</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sunrise Sunset">
+    <script src="https://use.fontawesome.com/e9d49cd4b8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mogra|Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="site">
+    <header class="container">
+        <h1>Sunrise <span class="fa fa-sun-o"></span> Sunset</h1>
+    </header>
     <main class="container  site-content">
         <section class="row">
             <form class="u-full-width" action="index.html" method="post">
-                <input type="text" name="zip" id="zipField" placeholder="ZIP">
-                <input type="date" name="date" id="datePicker">
+                <input type="text" name="zip" class="user-input" id="zipField" placeholder="ZIP">
+                <input type="date" name="date" class="user-input" id="datePicker">
                 <button type="button" class="button-primary" name="timesBtn" id="timesBtn">Get times</button>
             </form>
         </section>
-        <section class="row" id="output">
+        <section class="row display-results" id="output">
             <h2 id="outputHeader"></h2>
             <div class="row">
-                <section class="six columns" id="sunriseOutput">
+                <section class="six columns results-text" id="sunriseOutput">
 
                 </section>
-                <section class="six columns" id="sunsetOutput">
+                <section class="six columns results-text" id="sunsetOutput">
 
                 </section>
             </div>
         </section>
     </main>
     <footer class="container">
-        <p>All times are shown in <em>your</em> time zone.</p>
-        <p>Copyright &copy; 2017 Sean Buchholz. All Rights Reserved.</p>
+        <p class="disclaimer">All times are shown in <em>your</em> time zone.</p>
+        <p class="copyright">Copyright &copy; 2017 Sean Buchholz. All Rights Reserved.</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
