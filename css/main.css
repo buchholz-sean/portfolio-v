@@ -1,19 +1,59 @@
+body {
+  font-size: 62.5%;
+  background: url("../../img/cartographer.png") repeat;
+  color: #20004d; }
+  body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffd000), color-stop(50%, #a400b3), to(#150033));
+    background-image: linear-gradient(to right, #ffd000 0%, #a400b3 50%, #150033 100%);
+    opacity: 0.6; }
+
 .site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: #ffd259;
-    background: -moz-linear-gradient(left, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
-    background: -webkit-linear-gradient(left, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
-    background: linear-gradient(to right, hsl(44, 100%, 67%) 28%, hsl(44, 100%, 67%) 28%, hsl(316, 81%, 38%) 50%, hsl(239, 52%, 32%) 74%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd259', endColorstr='#27297c', GradientType=1);
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: "Muli", sans-serif; }
 
 .site-content {
-    flex: 1;
-}
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.6rem; }
 
-#output {
-    background: rgba(0, 0, 0, .25);
-    color: white;
-}
+h1 {
+  font-family: "Mogra", cursive;
+  font-size: 6.4rem;
+  color: #fff6cc; }
+
+h2 {
+  font-family: "Mogra", cursive;
+  font-size: 4.8rem; }
+
+.container {
+  background: rgba(64, 64, 64, 0.2);
+  padding: 2rem; }
+
+.user-input {
+  color: #20004d; }
+
+.results-text {
+  font-size: 1.8rem; }
+
+.time-result {
+  font-size: 4.8rem;
+  color: #fff6cc;
+  font-family: "Mogra", cursive; }
+
+.copyright,
+.disclaimer {
+  font-size: 1.8rem; }
