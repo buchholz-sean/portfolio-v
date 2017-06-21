@@ -1,0 +1,28 @@
+body {
+    font-size: 62.5%;
+    background: url("../../img/cartographer.png") repeat;
+    color: $color-text-dark;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to right, $color-sunrise-base 0%,$color-median-base 50%,$color-sunset-base 100%);
+        opacity: 0.6;
+    }
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $font-copy;
+}
+
+.site-content {
+    flex: 1;
+    font-size: 1.6rem;
+}
