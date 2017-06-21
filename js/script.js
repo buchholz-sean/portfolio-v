@@ -89,8 +89,8 @@ window.addEventListener("load", function() {
         var sunsetIndex = getRandomArbitrary(0, sunsetString.length);
         var header = `On ${date} in ${loc}:`;
         outputHeader.innerHTML = header;
-        sunriseOutput.innerHTML = `<p>${sunriseString[sunriseIndex]}sunrise at ${sunrise}</p>`;
-        sunsetOutput.innerHTML = `<p>${sunsetString[sunsetIndex]}sunset at ${sunset}</p>`;
+        sunriseOutput.innerHTML = `<p>${sunriseString[sunriseIndex]}sunrise at<br /><span class="time-result">${sunrise}</span></p>`;
+        sunsetOutput.innerHTML = `<p>${sunsetString[sunsetIndex]}sunset at<br /><span class="time-result">${sunset}</span></p>`;
     }
 
     // Geolocation api
