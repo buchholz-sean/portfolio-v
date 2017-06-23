@@ -27,7 +27,7 @@ window.addEventListener("load", function() {
                 var city = data.results[0].address_components[1].long_name;
                 var state = data.results[0].address_components[2].short_name;
                 var query = `lat=${lat}&lng=${lng}`;
-                var place = `${city}, ${state}`
+                var place = `${city},&nbsp;${state}`
                 getTimes(query, place);
             } else {
                 console.log("Response error: ", req);
@@ -45,7 +45,7 @@ window.addEventListener("load", function() {
         var url = `https://api.sunrise-sunset.org/json?${loc}&date=${queryDate}&formatted=0`
         var req = new XMLHttpRequest();
         var dateOptions = {
-            weekday: 'long',
+            weekday: 'short',
             year: 'numeric',
             month: 'short',
             day: 'numeric'
