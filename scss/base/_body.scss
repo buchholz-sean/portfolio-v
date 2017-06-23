@@ -1,7 +1,6 @@
 body {
     font-size: 62.5%;
     background: url("../../img/cartographer.png") repeat;
-    color: $color-text-dark;
 
     &:before {
         content: "";
@@ -20,6 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: $font-copy;
+    color: $color-text-dark;
 }
 
 .site-content {

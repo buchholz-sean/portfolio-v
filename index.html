@@ -14,24 +14,26 @@
 </head>
 
 <body class="site">
-    <header class="container">
+    <header class="container  masthead">
         <h1>Sunrise <span class="fa fa-sun-o"></span> Sunset</h1>
     </header>
     <main class="container  site-content">
-        <section class="row">
-            <form class="u-full-width" action="index.html" method="post">
-                <input type="text" name="zip" class="user-input" id="zipField" placeholder="ZIP">
-                <input type="date" name="date" class="user-input" id="datePicker">
-                <button type="button" class="button-primary" name="timesBtn" id="timesBtn">Get times</button>
+        <section class="row  input-form-container">
+            <form class="u-full-width  input-form" action="index.html" method="post">
+                <div><label for="zipField" class="input-label">ZIP Code</label>
+                    <input type="text" name="zip" class="user-input" id="zipField" placeholder="ex. 20707"></div>
+                <div><label for="datePicker" class="input-label">Date</label>
+                    <input type="date" name="date" class="user-input" id="datePicker"></div>
+                <button type="button" class="btn-submit" name="timesBtn" id="timesBtn">Get times</button>
             </form>
         </section>
-        <section class="row display-results" id="output">
+        <section class="row  display-results" id="output">
             <h2 id="outputHeader"></h2>
             <div class="row">
-                <section class="six columns results-text" id="sunriseOutput">
+                <section class="six columns  results-text" id="sunriseOutput">
 
                 </section>
-                <section class="six columns results-text" id="sunsetOutput">
+                <section class="six columns  results-text" id="sunsetOutput">
 
                 </section>
             </div>

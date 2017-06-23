@@ -1,7 +1,6 @@
 body {
   font-size: 62.5%;
-  background: url("../../img/cartographer.png") repeat;
-  color: #20004d; }
+  background: url("../../img/cartographer.png") repeat; }
   body:before {
     content: "";
     position: absolute;
@@ -22,7 +21,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  color: #20004d; }
 
 .site-content {
   -webkit-box-flex: 1;
@@ -40,11 +40,24 @@ h2 {
   font-size: 4.8rem; }
 
 .container {
-  background: rgba(64, 64, 64, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 2rem; }
 
 .user-input {
   color: #20004d; }
+
+.input-label {
+  font-size: 1.2rem; }
+
+.btn-submit {
+  background-color: #20004d;
+  color: #fff6cc;
+  border-color: #20004d;
+  margin-top: 2.4rem; }
+  .btn-submit:focus, .btn-submit:hover {
+    background-color: #350080;
+    color: #fff6cc;
+    border-color: #20004d; }
 
 .results-text {
   font-size: 1.8rem; }
@@ -57,3 +70,34 @@ h2 {
 .copyright,
 .disclaimer {
   font-size: 1.8rem; }
+
+.masthead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.input-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
